@@ -1,0 +1,15 @@
+name: 'Inject Secret'
+description: 'Inject GitHub Secrets into any file'
+inputs:
+  target:
+    description: 'Filepath to the file you would like to inject secrets into'
+    required: true
+  replace:
+    description: 'A set of KEY=value pairs for your replacements. If you wanted to replace __FOO__ with "bar", you would write FOO=bar here.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: sliders
+  color: blue
