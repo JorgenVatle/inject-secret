@@ -4,7 +4,10 @@
   "description": "Inject GitHub secrets into any file. Especially useful for CI/CD where environment variables cannot be used.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preversion": "npm run build && git add dist/** node_modules/** && git commit -m \"compile package\" & exit 0",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [],
   "author": "Jørgen <Jorgen@WcAServices.net> (https://github.com/JorgenVatle)",
