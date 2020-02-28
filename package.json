@@ -12,5 +12,8 @@
   "devDependencies": {
     "@types/node": "^13.7.6",
     "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.2"
   }
 }
