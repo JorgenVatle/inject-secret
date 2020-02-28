@@ -31,7 +31,7 @@ Would become:
 }
 ```
 
-## Example usage
+## Example workflow
 ```yaml
 jobs:
   test:
