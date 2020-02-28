@@ -1,6 +1,6 @@
 {
   "name": "inject-secret",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inject GitHub secrets into any file. Especially useful for CI/CD where environment variables cannot be used.",
   "main": "index.js",
   "scripts": {
