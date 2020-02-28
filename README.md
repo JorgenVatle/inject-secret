@@ -31,6 +31,19 @@ Would become:
 }
 ```
 
+## Example usage
+```yaml
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: JorgenVatle/inject-secret@v1
+        with:
+          target: './config/test.json'
+          replace: 'S3_SECRET=${{ secrets.S3_SECRET }} SMTP_PASSWORD=${{ secrets.SMTP_PASSWORD }}'
+```
+
 ## License
 This repository is licensed under the ISC license.
 
