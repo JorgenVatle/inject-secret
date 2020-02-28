@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Jørgen <Jorgen@WcAServices.net> (https://github.com/JorgenVatle)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.7.6",
+    "typescript": "^3.8.2"
+  }
 }
