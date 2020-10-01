@@ -17,6 +17,6 @@
     "typescript": "^3.8.2"
   },
   "dependencies": {
-    "@actions/core": "^1.2.2"
+    "@actions/core": "^1.2.6"
   }
 }
